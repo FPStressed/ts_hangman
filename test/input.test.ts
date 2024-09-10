@@ -13,4 +13,16 @@ describe('handles unsanitized inputs from user', () => {
     // Assert
     expect(input).toBe(sanitizedInput);
   });
+
+  test('can turn a Lowercase letter into Uppercase', () => {
+    // Arrange
+    let capitalLetter = 'a';
+    let sanitizedInput = 'A';
+
+    // Act
+    let input = sanitizeInput(capitalLetter);
+
+    // Assert
+    expect(input).toBe(sanitizedInput);
+  }); 
 });
