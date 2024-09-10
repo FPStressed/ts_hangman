@@ -1,9 +1,7 @@
-import { scoreBowling } from './hangman';
+import {sanitizeInput} from './input';
 
 function main() {
-    const scoreCard = [1,2,3]
-    const score = scoreBowling(scoreCard)
-    console.log(score)
+    return NaN
 }
 
 main()
