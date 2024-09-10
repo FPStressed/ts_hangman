@@ -25,4 +25,16 @@ describe('handles unsanitized inputs from user', () => {
     // Assert
     expect(input).toBe(sanitizedInput);
   }); 
+
+  test('if it is not a letter, it is not a correct input', () => {
+    // Arrange
+    let capitalLetter = '!';
+    let sanitizedInput = 'This is not a correct input, please input a letter.';
+
+    // Act
+    let input = sanitizeInput(capitalLetter);
+
+    // Assert
+    expect(input).toBe(sanitizedInput);
+  }); 
 });
