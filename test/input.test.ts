@@ -48,5 +48,5 @@ describe('handles unsanitized inputs from user', () => {
 
     // Assert
     expect(input).toBe(sanitizedInput);
-  }); 
+  });
 });
